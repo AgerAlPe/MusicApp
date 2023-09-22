@@ -8,6 +8,18 @@
     android:backgroundTint="#211830"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/albumImageView"
+        android:layout_width="410dp"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/apashe_thegood_thebad_thefake" />
+
     <TextView
         android:id="@+id/textViewEndSong"
         android:layout_width="40dp"
@@ -16,10 +28,25 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
+        app:layout_constraintVertical_bias="0.849" />
+
+    <TextView
+        android:id="@+id/artistNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/artistname"
+        android:textColor="#F4F4F4"
+        android:textColorLink="#FFFFFF"
+        android:translationZ="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
 
     <TextView
         android:id="@+id/albumNameView"
@@ -32,47 +59,24 @@
         android:translationZ="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19999999" />
-
-    <TextView
-        android:id="@+id/artistNameView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/artistname"
-        android:textColor="#F4F4F4"
-        android:textColorLink="#FFFFFF"
-        android:translationZ="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
-
-    <ImageView
-        android:id="@+id/albumImageView"
-        android:layout_width="410dp"
-        android:layout_height="230dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/apashe_thegood_thebad_thefake" />
+        app:layout_constraintVertical_bias="0.301" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="20dp"
         android:progress="25"
         android:progressTint="@color/videoProgress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
 
     <ImageView
         android:id="@+id/imageViewForth"
@@ -80,10 +84,10 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40"
+        app:layout_constraintVertical_bias="0.70"
         app:srcCompat="@drawable/skipsong" />
 
     <ImageView
@@ -93,10 +97,10 @@
         android:rotation="-180"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40"
+        app:layout_constraintVertical_bias="0.7"
         app:srcCompat="@drawable/skipsong" />
 
     <TextView
@@ -107,10 +111,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
+        app:layout_constraintVertical_bias="0.849" />
 
     <ImageView
         android:id="@+id/imageViewPlay"
@@ -118,9 +122,10 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40"
+        app:layout_constraintVertical_bias="0.70"
         app:srcCompat="@drawable/playbutton" />
 
     <ImageView
@@ -130,66 +135,37 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40"
-        app:srcCompat="@drawable/pausebutton"
-        tools:visibility="invisible" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:contentDescription="@string/app_name"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        tools:visibility="invisible" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:contentDescription="@string/app_name"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40"
-        app:srcCompat="@android:drawable/arrow_down_float"
+        app:layout_constraintVertical_bias="0.7"
+        app:srcCompat="@drawable/pausebutton"
         tools:visibility="invisible" />
 
     <ProgressBar
         android:id="@+id/soundBar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="250dp"
+        android:layout_width="30dp"
         android:layout_height="20dp"
         android:progress="70"
         android:progressTint="@color/volumeColor"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:rotation="-90"
+        android:scaleX="5"
+        app:layout_constraintBottom_toTopOf="@+id/altavozSilenciado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
+        app:layout_constraintTop_toBottomOf="@+id/altavoz" />
 
     <ImageView
         android:id="@+id/altavoz"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/soundBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34"
         app:srcCompat="@drawable/altavoz" />
 
     <ImageView
@@ -198,20 +174,20 @@
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34"
+        app:layout_constraintTop_toBottomOf="@+id/soundBar"
         app:srcCompat="@drawable/altavozsilenciado" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
-        android:layout_height="240dp"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
         android:background="@color/selectedElementColor"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
@@ -225,15 +201,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="410dp"
-        android:layout_height="50dp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintVertical_chainStyle="packed">
 
         <ImageView

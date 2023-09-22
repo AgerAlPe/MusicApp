@@ -11,6 +11,7 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
+    private var pressed: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         val editName: TextView = findViewById<TextView>(R.id.albumNameView)
         val editArtist: TextView = findViewById<TextView>(R.id.artistNameView)
 
-        var pressed: Boolean = false
         val play : ImageView = findViewById<ImageView>(R.id.imageViewPlay)
         val pause : ImageView = findViewById<ImageView>(R.id.imageViewPause)
 
@@ -35,4 +35,46 @@ class MainActivity : AppCompatActivity() {
             pressed = false
         }
     }
+    override fun onResume() {
+        super.onResume()
+        Log.d("Debug", "onResume")
+        val play : ImageView = findViewById<ImageView>(R.id.imageViewPlay)
+        val pause : ImageView = findViewById<ImageView>(R.id.imageViewPause)
+        if (pressed) {
+            pause.visibility = View.VISIBLE
+            play.visibility = View.INVISIBLE
+        }else {
+            pause.visibility = View.INVISIBLE
+            play.visibility = View.VISIBLE
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        Log.d("Debug","onSaveInstanceState")
+        // Save the user's current game state.
+        outState?.run {
+            putBoolean("result", pressed)
+
+        }
+        // Always call the superclass so it can save the view hierarchy.
+        super.onSaveInstanceState(outState)
+    }
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        // Always call the superclass so it can restore the view hierarchy.
+        super.onRestoreInstanceState(savedInstanceState)
+        // Restore state members from saved instance.
+        savedInstanceState?.run {
+            pressed = savedInstanceState.getBoolean("result")
+            val play : ImageView = findViewById<ImageView>(R.id.imageViewPlay)
+            val pause : ImageView = findViewById<ImageView>(R.id.imageViewPause)
+            if(pressed) {
+                pause.visibility = View.VISIBLE
+                play.visibility = View.INVISIBLE
+            }else {
+                pause.visibility = View.INVISIBLE
+                play.visibility = View.VISIBLE
+            }
+        }
+    }
+
 }

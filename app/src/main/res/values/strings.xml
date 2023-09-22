@@ -4,38 +4,5 @@
     <string name="artistname">Apashe</string>
     <string name="songLength">12.14</string>
     <string name="actualLength">3.06</string>
-    <string name="firstLyrics">
-        [Intro]
-        Call me mystery
-        I mystify
-        [?] me feel [?]
-        I mystify
-
-        [Build-Up]
-        And now I\'ll rise above you
-
-        [Drop]
-
-        [Verse]
-        You can never say what I have lost
-        You can never guess where I\'ve been gone
-        I can never break something that ain\'t wrong
-        Baby come and chase what I have in store
-        I can never break something that ain't wrong
-        Baby come and chase what I have in store
-
-        [Build-Up]
-        And now I'll rise above you
-
-        [Drop]
-
-        [Outro]
-        Call me mystery
-        I mystify
-        [?] me feel [?]
-        I mystify
-        [?] and now I'll rise above you
-    </string>
-    <string name="secondLyrics">nothing for now</string>
-    <string name="thirdLyrics">nothing for now</string>
+    <string name="Lyrics">nothing for now</string>
 </resources>
